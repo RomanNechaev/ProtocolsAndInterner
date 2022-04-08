@@ -11,3 +11,4 @@ usage: TCP/UDP Scanner [-a ADDRESS] [-t PROTOCOL_TYPE] [-r RANGE_PORT] [-n THREA
 
 # Примеры использования:
 'ports_scanner.py -a 127.0.0.1 -t TCP -r 1:1000 -n 300'
+`<html class="ie no-js">`
