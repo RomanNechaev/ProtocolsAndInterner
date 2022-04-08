@@ -58,7 +58,6 @@ def scan_ports(threads_number: int, protocol_type: str, ports_range: str):
     l, r = int(ports_range.split(":")[0]), int(ports_range.split(":")[1])
     if check_correct_ports(l, r):
         if protocol_type == "TCP":
-            l, r = int(ports_range.split(":")[0]), int(ports_range.split(":")[1])
             with ThreadPoolExecutor(max_workers=threads_number) as executor:
                 wait([executor.submit(print_tcp_results, p) for p in range(l, r + 1)])
         else:
