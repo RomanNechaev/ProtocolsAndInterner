@@ -76,7 +76,7 @@ def main():
     )
     scanner.add_argument("-t", "--protocol_type", type=str, help="Type of protocol for scan")
     scanner.add_argument(
-        "-r", "--ports_range", type=str, help="range of ports to be checked"
+        "-r", "--ports_range", default="100:150", type=str, help="range of ports to be checked"
     )
     scanner.add_argument(
         "-n", "--thread_number", default=100, type=int, help="Count of threads to scan"
