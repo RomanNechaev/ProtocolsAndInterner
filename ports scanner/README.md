@@ -9,4 +9,4 @@ usage: TCP/UDP Scanner [-a ADDRESS] [-t PROTOCOL_TYPE] [-r RANGE_PORT] [-n THREA
 Чтобы узнать подробную информацию, о том как пользоваться скриптом, передайте в качестве аргумента -h
 
 # Примеры использования:
-  ports_scanner.py -a 127.0.0.1 -t TCP -r 1:1000 -n 300
+  <ports_scanner.py -a 127.0.0.1 -t TCP -r 1:1000 -n 300>
