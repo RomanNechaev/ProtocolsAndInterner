@@ -69,12 +69,12 @@ def scan_ports(threads_number: int, protocol_type: str, ports_range: str):
 def main():
     script_name = "TCP/UDP Scanner"
     scanner = argparse.ArgumentParser(
-        usage=f"{script_name} [-a ADDRESS] -t (protocol_type) -r (range_port) [-n THREAD_NUMBER]"
+        usage=f"{script_name} [-a ADDRESS] [-t PROTOCOL_TYPE] [-r RANGE_PORT] [-n THREAD_NUMBER]"
     )
     scanner.add_argument(
         "-a", "--address", default="localhost", type=str, help="Enter a host name for scan"
     )
-    scanner.add_argument("-t", "--protocol_type", type=str, help="Type of protocol for scan")
+    scanner.add_argument("-t", "--protocol_type", default="TCP", type=str, help="Type of protocol for scan")
     scanner.add_argument(
         "-r", "--ports_range", default="100:150", type=str, help="range of ports to be checked"
     )
