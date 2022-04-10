@@ -1,2 +1,2 @@
-# ProtocolsAndInterner
-Scripts for Protocols and Interner cours
+# ProtocolsAndInternet
+Scripts for Protocols and Internet cours
