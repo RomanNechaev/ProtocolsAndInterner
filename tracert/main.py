@@ -3,6 +3,7 @@ import struct
 from urllib.error import URLError, HTTPError
 import urllib.request
 import json
+import argparse
 
 
 def get_echo_request():
@@ -87,5 +88,24 @@ def get_info(ip, ttl):
     return message
 
 
+def main():
+    script_name = "Traceroute"
+    scanner = argparse.ArgumentParser(
+        usage=f"{script_name} -a ADDRESS [-t TIMEOUT] [-h MAX_HOPS]"
+    )
+    scanner.add_argument(
+        "-a", "--address", type=str, help="Enter a hostname for traceroute"
+    )
+    scanner.add_argument("-t", "--timeout", default=2, type=int, help="Response waiting time")
+    scanner.add_argument(
+         "--hops", default=30, type=int, help="Maximum number of hops"
+    )
+    args = scanner.parse_args()
+    addr = args.address
+    timeout = args.timeout
+    hops = args.hops
+    traceroute(addr, timeout, hops)
+
+
 if __name__ == "__main__":
-    traceroute("google.com", 2, 30)
+    main()
