@@ -20,5 +20,4 @@ DNS сервер самостоятельно не обслуживает пол
 ![image](https://user-images.githubusercontent.com/70903393/173194131-799dce26-0d6d-4744-9d84-00e68fd1682f.png)
 
 Запросим то же самое спустя 6 минут
-![image](https://user-images.githubusercontent.com/70903393/173194497-75b3eac9-bcae-46bc-8eb1-b81713709f46.png)
 ![image](https://user-images.githubusercontent.com/70903393/173194490-b996d517-f930-4f9f-b991-a2e1eed1075d.png)
