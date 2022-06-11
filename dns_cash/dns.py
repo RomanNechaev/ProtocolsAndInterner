@@ -1,9 +1,9 @@
 import socket
 import datetime
-from dns_cash.parse.msg_controller import MSGController
-from dns_cash.cfg import GOOGLE_NS, ttl_m
-from dns_cash.cacher import Cacher
-from dns_cash.support_function import SupportFunction
+from parse.msg_controller import MSGController
+from cfg import GOOGLE_NS, ttl_m
+from cacher import Cacher
+from support_function import SupportFunction
 
 
 class DNS:
