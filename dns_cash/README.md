@@ -6,3 +6,19 @@ DNS сервер самостоятельно не обслуживает пол
 Сервер умеет обработывать типы записей: A, NS.
 
 ## Использование
+`server.py`
+или
+` sudo python3 server.py`
+
+## Примеры использования
+Запросим ресурсную запись типа А доменного имени: urfu.ru(сервер пока не хранит информацию об этом домене)
+![image](https://user-images.githubusercontent.com/70903393/173193989-fbb68f66-9775-4211-9c2a-e974997f8d7c.png)
+![image](https://user-images.githubusercontent.com/70903393/173194088-b0ce3e41-1f6a-41b5-ac1b-029109c043cd.png)
+
+Запросим то же самое еще раз. На этот раз сервер взял данные из кэша
+![image](https://user-images.githubusercontent.com/70903393/173194103-b97eddca-a7dd-4bce-8130-02bce53279d2.png)
+![image](https://user-images.githubusercontent.com/70903393/173194131-799dce26-0d6d-4744-9d84-00e68fd1682f.png)
+
+Запросим то же самое спустя 6 минут
+![image](https://user-images.githubusercontent.com/70903393/173194497-75b3eac9-bcae-46bc-8eb1-b81713709f46.png)
+![image](https://user-images.githubusercontent.com/70903393/173194490-b996d517-f930-4f9f-b991-a2e1eed1075d.png)
