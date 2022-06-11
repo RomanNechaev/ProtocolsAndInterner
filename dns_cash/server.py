@@ -1,5 +1,5 @@
 import socket
-from dns_cash.parse.response import Response
+from parse.response import Response
 
 
 class Server:
