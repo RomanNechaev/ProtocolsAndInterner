@@ -1,12 +1,12 @@
-import dns_cash.parse.header_flags
-import dns_cash.dns
-from dns_cash.support_function import SupportFunction
-from dns_cash.parse.msg_controller import MSGController
+import parse.header_flags
+import dns
+from support_function import SupportFunction
+from parse.msg_controller import MSGController
 
 
 class Response:
     global dnss
-    dnss = dns_cash.dns.DNS()
+    dnss = dns.DNS()
 
     @staticmethod
     def build_response(data):
@@ -44,9 +44,9 @@ class Response:
         for bit in range(1, 5):
             OPCODE += str(ord(first_byte) & (1 << bit))
 
-        first_byte_str = dns_cash.parse.header_flags.QR + OPCODE + dns_cash.parse.header_flags.AA \
-                         + dns_cash.parse.header_flags.TC + dns_cash.parse.header_flags.RD
-        second_byte_str = dns_cash.parse.header_flags.RA + dns_cash.parse.header_flags.Z + dns_cash.parse.header_flags.RCODE
+        first_byte_str = parse.header_flags.QR + OPCODE + parse.header_flags.AA \
+                         + parse.header_flags.TC + parse.header_flags.RD
+        second_byte_str = parse.header_flags.RA + parse.header_flags.Z + parse.header_flags.RCODE
 
         return SupportFunction.flags_to_bytes(first_byte_str) + SupportFunction.flags_to_bytes(
             second_byte_str)
